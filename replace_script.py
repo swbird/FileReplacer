@@ -30,7 +30,8 @@ class catalog_operation():
 
         for i in tree:
             # print(i)
-            [self.files_location.append(i[0]+'\\'+ele) for ele in i[2] if ele[-3:]=='.py' or ele[-4:]=='json']
+            allow_types = ['txt','json','py']
+            [self.files_location.append(i[0]+'\\'+ele) for ele in i[2] if ele[-len(ele.split('.')[-1]):] in allow_types]
             self.dirs_location.append(i[0])
             all_file_num+=len(i[2])
             all_dir_num+=1
