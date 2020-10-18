@@ -1,0 +1,11 @@
+{
+  "format_version": [
+    1,
+    1,
+    0
+  ],
+    "Quark:TEST": {
+    "textures": "Quark:TEST",
+    "sound": "stone"
+  }
+}
